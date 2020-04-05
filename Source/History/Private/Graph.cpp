@@ -26,93 +26,29 @@ AGraph::AGraph()
 void AGraph::BeginPlay()
 {
 	Super::BeginPlay();
-	
-	
-
-}
-
-
-
-
-void AGraph::ReadFromTxtFile()
-{
-	//TArray<FString> nodesArray;
-	//if (FFileHelper::LoadFileToStringArray(nodesArray, *(FPaths::ConvertRelativePathToFull(FPaths::GameContentDir()) + "/Test/Data/e14.in"))) {
-	//	int32 k = 0;
-	//	FString res;
-	//	FString res1, res2;
-	//	AGraphNode* node;
-	//	FString IntAsString = FString::FromInt(nodesArray.Num());
-
-
-	//	int32 total = nodesArray.Num() / 2;
-	//	for (int32 i = 1; i <= total; i++)
-	//	{
-	//		nodesArray[k].Split(":", &res1, &res2);
-	//		node = (AGraphNode*)SpawnNodeBP(res1);
-
-	//		if (node) {
-
-	//			node->AttachToActor(this, FAttachmentTransformRules::KeepRelativeTransform);
-	//			node->SetData(res2, nodesArray[k + 1], res1);
-	//			node->Locate(i, total, IsRandom);
-	//			Nodes.Add(i, node);
-	//			k = k + 2;
-	//		}
-	//	}
-	//	if (Nodes.Num() > 0) {
-	//		TArray<FString> adjacencyArray;
-	//		if (FFileHelper::LoadFileToStringArray(adjacencyArray, *(FPaths::ConvertRelativePathToFull(FPaths::GameContentDir()) + "/Test/e14.in"))) {
-
-	//			//UKismetSystemLibrary::PrintString(this, "Nodes and Edges: " + result[0], true, true, FLinearColor(0, 0, 0, 1), 100.f);
-	//			AGraphEdge* edge;
-	//			for (int32 i = 1; i < adjacencyArray.Num(); i++) {
-	//				res = adjacencyArray[i];
-	//				res.Split(" ", &res1, &res2);
-	//				int32 nodeA_id = FCString::Atoi(*res1);
-	//				int32 nodeB_id = FCString::Atoi(*res2);
-	//				edge = SpawnEdge(i, nodeA_id, nodeB_id);
-	//				Edges.Add(i, edge);
-	//				Nodes[nodeA_id]->EdgeIds.Add(i);
-	//				Nodes[nodeB_id]->EdgeIds.Add(i);
-	//			}
-	//		}
-	//		else UE_LOG(LogTemp, Warning, TEXT("File 1 Not Found"));
-	//	}
-	//}
-	//else UE_LOG(LogTemp, Warning, TEXT("File 2 Not Found"));
 }
 
 AGraphNode* AGraph::SpawnNodeBP(int32 id, FString type, FString text, FString date)
 {
-	//UObject* SpawnActor = Cast<UObject>(StaticLoadObject(UObject::StaticClass(), NULL, TEXT("Blueprint'/Game/Blueprints/BP_GraphNode.BP_GraphNode'")));
+	AGraphNode* node = NULL;
 
-	UBlueprint* GeneratedBP = Cast<UBlueprint>(GraphNode);
-	/*if (!SpawnActor) {
-		UE_LOG(LogTemp, Warning, TEXT("CANT FIND OBJECT TO SPAWN"));
-		return NULL;
-	}*/
-
-	UClass* SpawnClass = GraphNode->StaticClass();
-	if (SpawnClass == NULL) {
-		UE_LOG(LogTemp, Warning, TEXT("CLASS == NULL"));
-		UKismetSystemLibrary::PrintString(this, "Class is not found", true, true, FLinearColor(1, 1, 1, 1), 1000.f);
-		return NULL;
+	if (ToSpawn) {
+		UWorld* World = GetWorld();
+		if (World) {
+			FActorSpawnParameters spawnParams;
+			node = World->SpawnActor<AGraphNode>(ToSpawn, GetActorLocation(), GetActorRotation(), spawnParams);
+		}
 	}
-
-	UWorld* World = GetWorld();
-	FActorSpawnParameters SpawnParams;
-	SpawnParams.Owner = this;
-	SpawnParams.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AlwaysSpawn;
-
-	AGraphNode* node = (AGraphNode*)World->SpawnActor<AActor>(GeneratedBP->GeneratedClass, GetActorLocation(), GetActorRotation(), SpawnParams);
 	if (node) {
-		UKismetSystemLibrary::PrintString(this, "Node is spawned", true, true, FLinearColor(1, 1, 1, 1), 1000.f);
 		node->AttachToActor(this, FAttachmentTransformRules::KeepRelativeTransform);
 		node->SetData(text, date, type);
 		node->Locate(id, NodesCount, IsRandom);
+		return node;
 	}
-	return node;
+	else {
+		UKismetSystemLibrary::PrintString(this, "NODE IS NOT SPAWNED", true, true, FLinearColor(1, 1, 1, 1), 1000.f);
+		return NULL;
+	}
 }
 
 AGraphEdge* AGraph::SpawnEdge(int32 id, int32 nodeA_id, int32 nodeB_id)

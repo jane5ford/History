@@ -19,21 +19,21 @@ public:
 	AGraph();
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Components")
 		USceneComponent* NodeSceneComponent;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Graph Attributes")
-		FString NodesFileName = "e14.in";
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Graph Attributes")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		int32 NodesCount;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Graph Attributes")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		int32 EdgesCount;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Graph Content")
 		TMap<int32, AGraphNode*> Nodes;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Graph Content")
 		TMap<int32, AGraphEdge*> Edges;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Graph Attributes")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		bool IsRandom;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Graph Attributes")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		UObject* GraphNode;
-	void ReadFromTxtFile();
+	
+	UPROPERTY(EditAnywhere)
+		TSubclassOf<class AGraphNode> ToSpawn;
 	UFUNCTION(BlueprintCallable) AGraphNode* SpawnNodeBP(int32 id, FString type, FString text, FString date);
 	UFUNCTION(BlueprintCallable) AGraphEdge* SpawnEdge(int32 id, int32 nodeA_id, int32 nodeB_id);
 
