@@ -1,0 +1,302 @@
+[
+	{
+		"Name": "node_1",
+		"type": "event",
+		"text": "Battle of Poltava",
+		"date": "8 July 1709"
+	},
+	{
+		"Name": "node_2",
+		"type": "person",
+		"text": "Carl XII",
+		"date": "1682-1718"
+	},
+	{
+		"Name": "node_3",
+		"type": "person",
+		"text": "Peter the Great",
+		"date": "1672-1725"
+	},
+	{
+		"Name": "node_4",
+		"type": "place",
+		"text": "Poltava, Ukranian",
+		"date": ""
+	},
+	{
+		"Name": "node_5",
+		"type": "state",
+		"text": "Tsardom of Russia",
+		"date": "1547-1721"
+	},
+	{
+		"Name": "node_6",
+		"type": "state",
+		"text": "Swedish Empire",
+		"date": "1611-1721"
+	},
+	{
+		"Name": "node_7",
+		"type": "place",
+		"text": "Uppsala, Sweden",
+		"date": ""
+	},
+	{
+		"Name": "node_8",
+		"type": "person",
+		"text": "Catherine I",
+		"date": "1684-1727"
+	},
+	{
+		"Name": "node_9",
+		"type": "person",
+		"text": "Ivan the Terrible",
+		"date": "1530-1584"
+	},
+	{
+		"Name": "node_10",
+		"type": "event",
+		"text": "Grand Embassy of Peter the Great",
+		"date": "1697-1698"
+	},
+	{
+		"Name": "node_11",
+		"type": "event",
+		"text": "Battle of Poltava",
+		"date": "8 July 1709"
+	},
+	{
+		"Name": "node_12",
+		"type": "person",
+		"text": "Carl XII",
+		"date": "1682-1718"
+	},
+	{
+		"Name": "node_13",
+		"type": "person",
+		"text": "Peter the Great",
+		"date": "1672-1725"
+	},
+	{
+		"Name": "node_14",
+		"type": "place",
+		"text": "Poltava, Ukranian",
+		"date": ""
+	},
+	{
+		"Name": "node_15",
+		"type": "state",
+		"text": "Tsardom of Russia",
+		"date": "1547-1721"
+	},
+	{
+		"Name": "node_16",
+		"type": "state",
+		"text": "Swedish Empire",
+		"date": "1611-1721"
+	},
+	{
+		"Name": "node_17",
+		"type": "place",
+		"text": "Uppsala, Sweden",
+		"date": ""
+	},
+	{
+		"Name": "node_18",
+		"type": "person",
+		"text": "Catherine I",
+		"date": "1684-1727"
+	},
+	{
+		"Name": "node_19",
+		"type": "person",
+		"text": "Ivan the Terrible",
+		"date": "1530-1584"
+	},
+	{
+		"Name": "node_20",
+		"type": "event",
+		"text": "Grand Embassy of Peter the Great",
+		"date": "1697-1698"
+	},
+	{
+		"Name": "node_21",
+		"type": "event",
+		"text": "Battle of Poltava",
+		"date": "8 July 1709"
+	},
+	{
+		"Name": "node_22",
+		"type": "person",
+		"text": "Carl XII",
+		"date": "1682-1718"
+	},
+	{
+		"Name": "node_23",
+		"type": "person",
+		"text": "Peter the Great",
+		"date": "1672-1725"
+	},
+	{
+		"Name": "node_24",
+		"type": "place",
+		"text": "Poltava, Ukranian",
+		"date": ""
+	},
+	{
+		"Name": "node_25",
+		"type": "state",
+		"text": "Tsardom of Russia",
+		"date": "1547-1721"
+	},
+	{
+		"Name": "node_26",
+		"type": "state",
+		"text": "Swedish Empire",
+		"date": "1611-1721"
+	},
+	{
+		"Name": "node_27",
+		"type": "place",
+		"text": "Uppsala, Sweden",
+		"date": ""
+	},
+	{
+		"Name": "node_28",
+		"type": "person",
+		"text": "Catherine I",
+		"date": "1684-1727"
+	},
+	{
+		"Name": "node_29",
+		"type": "person",
+		"text": "Ivan the Terrible",
+		"date": "1530-1584"
+	},
+	{
+		"Name": "node_30",
+		"type": "event",
+		"text": "Grand Embassy of Peter the Great",
+		"date": "1697-1698"
+	},
+	{
+		"Name": "node_31",
+		"type": "event",
+		"text": "Battle of Poltava",
+		"date": "8 July 1709"
+	},
+	{
+		"Name": "node_32",
+		"type": "person",
+		"text": "Carl XII",
+		"date": "1682-1718"
+	},
+	{
+		"Name": "node_33",
+		"type": "person",
+		"text": "Peter the Great",
+		"date": "1672-1725"
+	},
+	{
+		"Name": "node_34",
+		"type": "place",
+		"text": "Poltava, Ukranian",
+		"date": ""
+	},
+	{
+		"Name": "node_35",
+		"type": "state",
+		"text": "Tsardom of Russia",
+		"date": "1547-1721"
+	},
+	{
+		"Name": "node_36",
+		"type": "state",
+		"text": "Swedish Empire",
+		"date": "1611-1721"
+	},
+	{
+		"Name": "node_37",
+		"type": "place",
+		"text": "Uppsala, Sweden",
+		"date": ""
+	},
+	{
+		"Name": "node_38",
+		"type": "person",
+		"text": "Catherine I",
+		"date": "1684-1727"
+	},
+	{
+		"Name": "node_39",
+		"type": "person",
+		"text": "Ivan the Terrible",
+		"date": "1530-1584"
+	},
+	{
+		"Name": "node_40",
+		"type": "event",
+		"text": "Grand Embassy of Peter the Great",
+		"date": "1697-1698"
+	},
+	{
+		"Name": "node_41",
+		"type": "event",
+		"text": "Battle of Poltava",
+		"date": "8 July 1709"
+	},
+	{
+		"Name": "node_42",
+		"type": "person",
+		"text": "Carl XII",
+		"date": "1682-1718"
+	},
+	{
+		"Name": "node_43",
+		"type": "person",
+		"text": "Peter the Great",
+		"date": "1672-1725"
+	},
+	{
+		"Name": "node_44",
+		"type": "place",
+		"text": "Poltava, Ukranian",
+		"date": ""
+	},
+	{
+		"Name": "node_45",
+		"type": "state",
+		"text": "Tsardom of Russia",
+		"date": "1547-1721"
+	},
+	{
+		"Name": "node_46",
+		"type": "state",
+		"text": "Swedish Empire",
+		"date": "1611-1721"
+	},
+	{
+		"Name": "node_47",
+		"type": "place",
+		"text": "Uppsala, Sweden",
+		"date": ""
+	},
+	{
+		"Name": "node_48",
+		"type": "person",
+		"text": "Catherine I",
+		"date": "1684-1727"
+	},
+	{
+		"Name": "node_49",
+		"type": "person",
+		"text": "Ivan the Terrible",
+		"date": "1530-1584"
+	},
+	{
+		"Name": "node_50",
+		"type": "event",
+		"text": "Grand Embassy of Peter the Great",
+		"date": "1697-1698"
+	}
+]
