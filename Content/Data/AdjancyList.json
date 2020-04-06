@@ -1,0 +1,182 @@
+[
+	{
+		"Name": "edge_1",
+		"NodeA": 1,
+		"NodeB": 2
+	},
+	{
+		"Name": "edge_2",
+		"NodeA": 1,
+		"NodeB": 3
+	},
+	{
+		"Name": "edge_3",
+		"NodeA": 1,
+		"NodeB": 4
+	},
+	{
+		"Name": "edge_4",
+		"NodeA": 1,
+		"NodeB": 5
+	},
+	{
+		"Name": "edge_5",
+		"NodeA": 1,
+		"NodeB": 6
+	},
+	{
+		"Name": "edge_6",
+		"NodeA": 2,
+		"NodeB": 6
+	},
+	{
+		"Name": "edge_7",
+		"NodeA": 3,
+		"NodeB": 5
+	},
+	{
+		"Name": "edge_8",
+		"NodeA": 3,
+		"NodeB": 8
+	},
+	{
+		"Name": "edge_9",
+		"NodeA": 3,
+		"NodeB": 10
+	},
+	{
+		"Name": "edge_10",
+		"NodeA": 5,
+		"NodeB": 8
+	},
+	{
+		"Name": "edge_11",
+		"NodeA": 5,
+		"NodeB": 9
+	},
+	{
+		"Name": "edge_12",
+		"NodeA": 6,
+		"NodeB": 7
+	},
+	{
+		"Name": "edge_13",
+		"NodeA": 11,
+		"NodeB": 12
+	},
+	{
+		"Name": "edge_14",
+		"NodeA": 11,
+		"NodeB": 13
+	},
+	{
+		"Name": "edge_15",
+		"NodeA": 11,
+		"NodeB": 14
+	},
+	{
+		"Name": "edge_16",
+		"NodeA": 11,
+		"NodeB": 15
+	},
+	{
+		"Name": "edge_17",
+		"NodeA": 11,
+		"NodeB": 16
+	},
+	{
+		"Name": "edge_18",
+		"NodeA": 12,
+		"NodeB": 16
+	},
+	{
+		"Name": "edge_19",
+		"NodeA": 13,
+		"NodeB": 15
+	},
+	{
+		"Name": "edge_20",
+		"NodeA": 13,
+		"NodeB": 18
+	},
+	{
+		"Name": "edge_21",
+		"NodeA": 13,
+		"NodeB": 20
+	},
+	{
+		"Name": "edge_22",
+		"NodeA": 15,
+		"NodeB": 18
+	},
+	{
+		"Name": "edge_23",
+		"NodeA": 15,
+		"NodeB": 19
+	},
+	{
+		"Name": "edge_24",
+		"NodeA": 16,
+		"NodeB": 17
+	},
+	{
+		"Name": "edge_25",
+		"NodeA": 31,
+		"NodeB": 32
+	},
+	{
+		"Name": "edge_26",
+		"NodeA": 31,
+		"NodeB": 33
+	},
+	{
+		"Name": "edge_27",
+		"NodeA": 31,
+		"NodeB": 34
+	},
+	{
+		"Name": "edge_28",
+		"NodeA": 31,
+		"NodeB": 35
+	},
+	{
+		"Name": "edge_29",
+		"NodeA": 31,
+		"NodeB": 36
+	},
+	{
+		"Name": "edge_30",
+		"NodeA": 32,
+		"NodeB": 36
+	},
+	{
+		"Name": "edge_31",
+		"NodeA": 33,
+		"NodeB": 35
+	},
+	{
+		"Name": "edge_32",
+		"NodeA": 33,
+		"NodeB": 38
+	},
+	{
+		"Name": "edge_33",
+		"NodeA": 33,
+		"NodeB": 40
+	},
+	{
+		"Name": "edge_34",
+		"NodeA": 35,
+		"NodeB": 38
+	},
+	{
+		"Name": "edge_35",
+		"NodeA": 35,
+		"NodeB": 39
+	},
+	{
+		"Name": "edge_36",
+		"NodeA": 36,
+		"NodeB": 37
+	}
+]

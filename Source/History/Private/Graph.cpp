@@ -26,6 +26,7 @@ AGraph::AGraph()
 void AGraph::BeginPlay()
 {
 	Super::BeginPlay();
+	
 }
 
 AGraphNode* AGraph::SpawnNodeBP(int32 id, FString type, FString text, FString date)
@@ -57,6 +58,8 @@ AGraphEdge* AGraph::SpawnEdge(int32 id, int32 nodeA_id, int32 nodeB_id)
 	AGraphNode* nodeB;
 	nodeA = (AGraphNode*)Nodes[nodeA_id];
 	nodeB = (AGraphNode*)Nodes[nodeB_id];
+	nodeA->EdgeIds.Add(id);
+	nodeB->EdgeIds.Add(id);
 	AGraphEdge* edge = GetWorld()->SpawnActor<AGraphEdge>();
 	edge->AttachToActor(this, FAttachmentTransformRules::KeepRelativeTransform);
 	edge->Create(nodeA, nodeB);
