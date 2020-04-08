@@ -29,8 +29,6 @@ public:
 		TMap<int32, AGraphEdge*> Edges;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		bool IsRandom;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-		UObject* GraphNode;
 	
 	UPROPERTY(EditAnywhere)
 		TSubclassOf<class AGraphNode> ToSpawn;
