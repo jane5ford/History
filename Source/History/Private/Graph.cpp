@@ -44,7 +44,6 @@ AGraphNode* AGraph::SpawnNodeBP(int32 id, FString type, FString text, FString da
 		node->AttachToActor(this, FAttachmentTransformRules::KeepRelativeTransform);
 		node->SetData(text, date, type);
 		node->Locate(id, NodesCount, IsRandom);
-		node->SetActorHiddenInGame(true);
 		return node;
 	}
 	else {
