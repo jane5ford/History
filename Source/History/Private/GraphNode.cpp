@@ -48,12 +48,12 @@ AGraphNode::AGraphNode()
 	TextDescription->SetHorizontalAlignment(EHTA_Center);
 	TextDescription->SetWorldSize(8.f);
 	TextDescription->SetTextRenderColor(FColor(255, 174, 0, 255));
-	TextDate = CreateDefaultSubobject<UTextRenderComponent>(TEXT("Date"));
-	TextDate->SetupAttachment(RootComponent);
-	TextDate->bEditableWhenInherited = true;
-	TextDate->SetHorizontalAlignment(EHTA_Center);
-	TextDate->SetWorldSize(6.f);
-	this->AutoReceiveInput = EAutoReceiveInput::Player0;
+	//TextDate = CreateDefaultSubobject<UTextRenderComponent>(TEXT("Date"));
+	//TextDate->SetupAttachment(RootComponent);
+	//TextDate->bEditableWhenInherited = true;
+	//TextDate->SetHorizontalAlignment(EHTA_Center);
+	//TextDate->SetWorldSize(6.f);
+	//this->AutoReceiveInput = EAutoReceiveInput::Player0;
 	//SpriteComponent->OnClicked.AddDynamic(this, &AGraphNode::PickNode);
 	//InputComponent->BindAction("PickNode", IE_Pressed, this, &AGraphNode::PickNodes);
 }
