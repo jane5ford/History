@@ -32,18 +32,24 @@ public:
 		int32 Total;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Node Attrubutes")
 		bool Rotable = true;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Node Attrubutes")
+		bool Seeable;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Node Attrubutes")
+		bool Nearby;
+
+
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Components")
 		USceneComponent* NodeSceneComponent;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Components")
-		UParticleSystemComponent* P_OrangeEllipse;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Components")
-		UParticleSystemComponent* P_Sparkles;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Components")
 		UTextRenderComponent* TextDescription;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Components")
 		UTextRenderComponent* TextDate;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Components")
 		UPaperSpriteComponent* SpriteComponent;
+	
+	
+
 	void RotateToPlayer();
 	UFUNCTION()
 		void PickNode(UPrimitiveComponent* ClickedComp, FKey ButtonPressed);

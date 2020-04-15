@@ -27,18 +27,18 @@ AGraphNode::AGraphNode()
 	NodeSceneComponent = CreateDefaultSubobject<USceneComponent>(TEXT("NodeScene"));
 	NodeSceneComponent->bEditableWhenInherited = true;
 	RootComponent = NodeSceneComponent;
-	static ConstructorHelpers::FObjectFinder<UParticleSystem>orange(TEXT("ParticleSystem'/Game/Particles/P_OrangeEllipse.P_OrangeEllipse'"));
+	/*static ConstructorHelpers::FObjectFinder<UParticleSystem>orange(TEXT("ParticleSystem'/Game/Particles/P_OrangeEllipse.P_OrangeEllipse'"));
 	P_OrangeEllipse = CreateDefaultSubobject<UParticleSystemComponent>(TEXT("ParticleSystem"));
 	P_OrangeEllipse->SetupAttachment(RootComponent);
 	P_OrangeEllipse->bEditableWhenInherited = true;
 	P_OrangeEllipse->SetTemplate(orange.Object);
-	P_OrangeEllipse->SetWorldScale3D(FVector(0.5f, 0.5f, 0.5f));
-	static ConstructorHelpers::FObjectFinder<UParticleSystem>sparkles(TEXT("ParticleSystem'/Game/Particles/P_Sparkles.P_Sparkles'"));
+	P_OrangeEllipse->SetWorldScale3D(FVector(0.5f, 0.5f, 0.5f));*/
+	/*static ConstructorHelpers::FObjectFinder<UParticleSystem>sparkles(TEXT("ParticleSystem'/Game/Particles/P_Sparkles.P_Sparkles'"));
 	P_Sparkles = CreateDefaultSubobject<UParticleSystemComponent>(TEXT("ParticleSystem2"));
 	P_Sparkles->bEditableWhenInherited = true;
 	P_Sparkles->SetupAttachment(RootComponent);
 	P_Sparkles->SetTemplate(sparkles.Object);
-	P_Sparkles->SetVisibility(false);
+	P_Sparkles->SetVisibility(false);*/
 	SpriteComponent = CreateDefaultSubobject<UPaperSpriteComponent>(TEXT("Sprite"));
 	SpriteComponent->SetupAttachment(RootComponent);
 	SpriteComponent->SetWorldScale3D(FVector(0.05f, 0.05f, 0.05f));
@@ -114,13 +114,13 @@ void AGraphNode::RotateToPlayer()
 void AGraphNode::PickNode(UPrimitiveComponent* ClickedComp, FKey ButtonPressed)
 {
 	UKismetSystemLibrary::PrintString(this, "Pressed", true, true, FLinearColor(5, 5, 5, 1), 100.f);
-	P_OrangeEllipse->SetWorldScale3D(FVector(1.f, 1.f, 1.f));
+	
 }
 
 void AGraphNode::PickNodes()
 {
 	UKismetSystemLibrary::PrintString(this, "Pressed V", true, true, FLinearColor(5, 5, 5, 1), 100.f);
-	P_OrangeEllipse->SetWorldScale3D(FVector(1.f, 1.f, 1.f));
+
 }
 
 
